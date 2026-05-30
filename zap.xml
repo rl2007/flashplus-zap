@@ -1,82 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <STORE>
-  <PRODUCTS>
-
-    <PRODUCT>
-      <URL_PRODUCT>https://www.flashplus.co.il/product-page/8454102-sx740-17dd33</URL_PRODUCT>
-      <NAME_PRODUCT>Canon PowerShot SX740 HS כסוף עברית</NAME_PRODUCT>
-      <MODEL>SX740 HS</MODEL>
-      <DETAILS>מצלמת Canon PowerShot SX740 HS צבע כסוף, תפריט בעברית, משלוח חינם באמצעות UPS, אספקה תוך 1 עד 3 ימי עסקים, 18 חודשי אחריות מבית פלאש פלוס כולל איסוף והחזרה מבית הלקוח.</DETAILS>
-      <NUMBER_CATALOG></NUMBER_CATALOG>
-      <PRODUCTCODE>sx740-silver</PRODUCTCODE>
-      <CURRENCY>ILS</CURRENCY>
-      <PRICE>2450</PRICE>
-      <COST_SHIPMENT>0</COST_SHIPMENT>
-      <TIME_DELIVERY>3</TIME_DELIVERY>
-      <MANUFACTURER>Canon</MANUFACTURER>
-      <WARRANTY>18 חודשי אחריות</WARRANTY>
-      <WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
-      <WARRANTYBY>פלאש פלוס</WARRANTYBY>
-      <IMAGE>https://static.wixstatic.com/media/cf245a_4170464a68604a48bbadc18ffc52b1bf~mv2.jpg</IMAGE>
-      <TAX>1</TAX>
-    </PRODUCT>
-
-    <PRODUCT>
-      <URL_PRODUCT>https://www.flashplus.co.il/product-page/8454102-sx740-17dd33</URL_PRODUCT>
-      <NAME_PRODUCT>Canon PowerShot SX740 HS שחור עברית</NAME_PRODUCT>
-      <MODEL>SX740 HS</MODEL>
-      <DETAILS>מצלמת Canon PowerShot SX740 HS צבע שחור, תפריט בעברית, משלוח חינם באמצעות UPS, אספקה תוך 1 עד 3 ימי עסקים, 18 חודשי אחריות מבית פלאש פלוס כולל איסוף והחזרה מבית הלקוח.</DETAILS>
-      <NUMBER_CATALOG></NUMBER_CATALOG>
-      <PRODUCTCODE>sx740-black</PRODUCTCODE>
-      <CURRENCY>ILS</CURRENCY>
-      <PRICE>2630</PRICE>
-      <COST_SHIPMENT>0</COST_SHIPMENT>
-      <TIME_DELIVERY>3</TIME_DELIVERY>
-      <MANUFACTURER>Canon</MANUFACTURER>
-      <WARRANTY>18 חודשי אחריות</WARRANTY>
-      <WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
-      <WARRANTYBY>פלאש פלוס</WARRANTYBY>
-      <IMAGE>https://static.wixstatic.com/media/cf245a_1a2d0dd778f34991ada678cadee0ebda~mv2.avif</IMAGE>
-      <TAX>1</TAX>
-    </PRODUCT>
-
-    <PRODUCT>
-      <URL_PRODUCT>https://www.flashplus.co.il/product-page/canon-ixus-285-hs-1</URL_PRODUCT>
-      <NAME_PRODUCT>Canon IXUS 285 HS שחור עברית</NAME_PRODUCT>
-      <MODEL>IXUS 285 HS</MODEL>
-      <DETAILS>מצלמת Canon IXUS 285 HS צבע שחור, תפריט בעברית, משלוח חינם באמצעות UPS, אספקה תוך 1 עד 3 ימי עסקים, 18 חודשי אחריות מבית פלאש פלוס כולל איסוף והחזרה מבית הלקוח.</DETAILS>
-      <NUMBER_CATALOG></NUMBER_CATALOG>
-      <PRODUCTCODE>ixus285-black</PRODUCTCODE>
-      <CURRENCY>ILS</CURRENCY>
-      <PRICE>1450</PRICE>
-      <COST_SHIPMENT>0</COST_SHIPMENT>
-      <TIME_DELIVERY>3</TIME_DELIVERY>
-      <MANUFACTURER>Canon</MANUFACTURER>
-      <WARRANTY>18 חודשי אחריות</WARRANTY>
-      <WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
-      <WARRANTYBY>פלאש פלוס</WARRANTYBY>
-      <IMAGE>https://static.wixstatic.com/media/cf245a_be2713245a9f41a583776ef3b4bb295c~mv2.jpg</IMAGE>
-      <TAX>1</TAX>
-    </PRODUCT>
-
-    <PRODUCT>
-      <URL_PRODUCT>https://www.flashplus.co.il/product-page/items8831776-49fa6c</URL_PRODUCT>
-      <NAME_PRODUCT>Canon PowerShot G7 X Mark II שחור עברית</NAME_PRODUCT>
-      <MODEL>G7 X Mark II</MODEL>
-      <DETAILS>מצלמת Canon PowerShot G7 X Mark II צבע שחור, תפריט בעברית, משלוח חינם באמצעות UPS, אספקה תוך 1 עד 3 ימי עסקים, 18 חודשי אחריות מבית פלאש פלוס כולל איסוף והחזרה מבית הלקוח.</DETAILS>
-      <NUMBER_CATALOG></NUMBER_CATALOG>
-      <PRODUCTCODE>g7x-mark-ii-black</PRODUCTCODE>
-      <CURRENCY>ILS</CURRENCY>
-      <PRICE>4700</PRICE>
-      <COST_SHIPMENT>0</COST_SHIPMENT>
-      <TIME_DELIVERY>3</TIME_DELIVERY>
-      <MANUFACTURER>Canon</MANUFACTURER>
-      <WARRANTY>18 חודשי אחריות</WARRANTY>
-      <WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
-        <WARRANTYBY>פלאש פלוס</WARRANTYBY>
-      <IMAGE>https://static.wixstatic.com/media/cf245a_079f6c02b86a491b84908066fc8e7004~mv2.webp</IMAGE>
-      <TAX>1</TAX>
-    </PRODUCT>
-
-  </PRODUCTS>
+<PRODUCTS>
+<PRODUCT>
+<URL_PRODUCT>https://www.flashplus.co.il/product-page/8454102-sx740-17dd33</URL_PRODUCT>
+<NAME_PRODUCT>Canon PowerShot SX740 HS כסוף עברית</NAME_PRODUCT>
+<MODEL>PowerShot SX740 HS</MODEL>
+<DETAILS>מצלמת Canon PowerShot SX740 HS כסופה עם תפריט בעברית, זום אופטי x40, וידאו 4K, Wi-Fi ו-Bluetooth. משלוח חינם UPS, אספקה 1 עד 3 ימי עסקים, 18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח.</DETAILS>
+<NUMBER_CATALOG/>
+<PRODUCTCODE>sx740-silver-he</PRODUCTCODE>
+<CURRENCY>ILS</CURRENCY>
+<PRICE>2450</PRICE>
+<COST_SHIPMENT>0</COST_SHIPMENT>
+<TIME_DELIVERY>3</TIME_DELIVERY>
+<MANUFACTURER>Canon</MANUFACTURER>
+<WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
+<WARRANTYBY>פלאש פלוס</WARRANTYBY>
+<IMAGE>https://static.wixstatic.com/media/cf245a_4170464a68604a48bbadc18ffc52b1bf~mv2.jpg</IMAGE>
+<TAX/>
+</PRODUCT>
+<PRODUCT>
+<URL_PRODUCT>https://www.flashplus.co.il/product-page/8454102-sx740-17dd33</URL_PRODUCT>
+<NAME_PRODUCT>Canon PowerShot SX740 HS שחור עברית</NAME_PRODUCT>
+<MODEL>PowerShot SX740 HS</MODEL>
+<DETAILS>מצלמת Canon PowerShot SX740 HS שחורה עם תפריט בעברית, זום אופטי x40, וידאו 4K, Wi-Fi ו-Bluetooth. משלוח חינם UPS, אספקה 1 עד 3 ימי עסקים, 18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח.</DETAILS>
+<NUMBER_CATALOG/>
+<PRODUCTCODE>sx740-black-he</PRODUCTCODE>
+<CURRENCY>ILS</CURRENCY>
+<PRICE>2630</PRICE>
+<COST_SHIPMENT>0</COST_SHIPMENT>
+<TIME_DELIVERY>3</TIME_DELIVERY>
+<MANUFACTURER>Canon</MANUFACTURER>
+<WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
+<WARRANTYBY>פלאש פלוס</WARRANTYBY>
+<IMAGE>https://static.wixstatic.com/media/cf245a_1a2d0dd778f34991ada678cadee0ebda~mv2.avif</IMAGE>
+<TAX/>
+</PRODUCT>
+<PRODUCT>
+<URL_PRODUCT>https://www.flashplus.co.il/product-page/canon-ixus-285-hs-1</URL_PRODUCT>
+<NAME_PRODUCT>Canon IXUS 285 HS שחור עברית</NAME_PRODUCT>
+<MODEL>IXUS 285 HS</MODEL>
+<DETAILS>מצלמת Canon IXUS 285 HS שחורה עם תפריט בעברית, זום אופטי x12, צילום Full HD, Wi-Fi ו-NFC לשיתוף תמונות. משלוח חינם UPS, אספקה 1 עד 3 ימי עסקים, 18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח.</DETAILS>
+<NUMBER_CATALOG/>
+<PRODUCTCODE>ixus285-black-he</PRODUCTCODE>
+<CURRENCY>ILS</CURRENCY>
+<PRICE>1450</PRICE>
+<COST_SHIPMENT>0</COST_SHIPMENT>
+<TIME_DELIVERY>3</TIME_DELIVERY>
+<MANUFACTURER>Canon</MANUFACTURER>
+<WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
+<WARRANTYBY>פלאש פלוס</WARRANTYBY>
+<IMAGE>https://static.wixstatic.com/media/cf245a_be2713245a9f41a583776ef3b4bb295c~mv2.jpg</IMAGE>
+<TAX/>
+</PRODUCT>
+<PRODUCT>
+<URL_PRODUCT>https://www.flashplus.co.il/product-page/items8831776-49fa6c</URL_PRODUCT>
+<NAME_PRODUCT>Canon PowerShot G7 X Mark II שחור עברית</NAME_PRODUCT>
+<MODEL>PowerShot G7 X Mark II</MODEL>
+<DETAILS>מצלמת Canon PowerShot G7 X Mark II שחורה עם תפריט בעברית, חיישן 1 אינץ', עדשה בהירה F1.8-F2.8, מסך מגע מתכוונן וצילום איכותי. משלוח חינם UPS, אספקה 1 עד 3 ימי עסקים, 18 חודשי אחריות כולל איסוף והחזרה.</DETAILS>
+<NUMBER_CATALOG/>
+<PRODUCTCODE>g7x-markii-black-he</PRODUCTCODE>
+<CURRENCY>ILS</CURRENCY>
+<PRICE>4700</PRICE>
+<COST_SHIPMENT>0</COST_SHIPMENT>
+<TIME_DELIVERY>3</TIME_DELIVERY>
+<MANUFACTURER>Canon</MANUFACTURER>
+<WARRANTY>18 חודשי אחריות כולל איסוף והחזרה מבית הלקוח</WARRANTY>
+<WARRANTYBY>פלאש פלוס</WARRANTYBY>
+<IMAGE>https://static.wixstatic.com/media/cf245a_079f6c02b86a491b84908066fc8e7004~mv2.webp</IMAGE>
+<TAX/>
+</PRODUCT>
+</PRODUCTS>
 </STORE>
