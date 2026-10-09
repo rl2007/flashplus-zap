@@ -56,6 +56,9 @@ function civilNoon(now){var p={};fmt.formatToParts(new Date(now)).forEach(functi
 function interval(friday){return {start:Math.floor((sunset(friday)-42*min)/min)*min,end:Math.ceil((sunset(friday+day)+74*min)/min)*min,candles:Math.floor((sunset(friday)-40*min)/min)*min,havdalah:Math.ceil(sunEvent(friday+day,-8.5)/min)*min}}
 function state(now){
  now=now===undefined?Date.now():Number(now);
+ // One-off early closure requested by the owner; expires on Saturday night.
+ var early=interval(Date.UTC(2026,9,9,12));early.start=Date.UTC(2026,9,9,14,7);
+ if(now>=early.start&&now<early.end)return Object.assign({closed:true,next:early.end},early);
  var noon=civilNoon(now),dow=new Date(noon).getUTCDay();
  var friday=noon+((5-dow+7)%7)*day;
  var prior=interval(friday-7*day),next=interval(friday);
