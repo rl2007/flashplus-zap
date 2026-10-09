@@ -1,0 +1,56 @@
+name: Publish Zap feed with Shabbat closure
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '7,22,37,52 11-17 * * 5'
+    - cron: '7,22,37,52 15-19 * * 6'
+    - cron: '17 6 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: shabbat-pages
+  cancel-in-progress: false
+
+jobs:
+  heartbeat:
+    if: github.event_name == 'schedule' && github.event.schedule == '17 6 * * *'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Keep the public repository schedule active
+        run: |
+          if [ "$(date -u +%d)" != "01" ]; then exit 0; fi
+          date -u +%Y-%m-%d > .github/shabbat-heartbeat.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/shabbat-heartbeat.txt
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Maintain Shabbat schedule activity"
+          git push
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/configure-pages@v5
+      - name: Build feed for current Jerusalem Shabbat status
+        run: node build-shabbat.mjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4
+        id: deployment
