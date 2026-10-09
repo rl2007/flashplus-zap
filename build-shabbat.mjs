@@ -16,5 +16,5 @@ for(const f of fs.readdirSync(path.join(root,'categories'))){
  fs.writeFileSync(path.join(output,'categories',f),status.closed?empty:fs.readFileSync(path.join(root,'categories',f)));
 }
 fs.writeFileSync(path.join(output,'zap.xml'),status.closed?empty:fs.readFileSync(path.join(root,'zap.xml')));
-for(const f of ['index.html','.nojekyll','shabbat-clock.js','shabbat.html','SUNCalc-LICENSE.txt'])fs.copyFileSync(path.join(root,f),path.join(output,f));
+for(const f of ['index.html','.nojekyll','shabbat-clock.js','shabbat.html','shabbat-candles.jpg','SUNCalc-LICENSE.txt'])fs.copyFileSync(path.join(root,f),path.join(output,f));
 console.log(JSON.stringify({closed:status.closed,timezone:clock.timezone,reopens:new Date(status.end).toISOString(),sourceUnchanged:true}));

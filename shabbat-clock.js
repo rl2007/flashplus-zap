@@ -37,10 +37,10 @@ function coords(d){
  return {ra:atan(cos(e)*sin(L),cos(L)),dec:asin(sin(e)*sin(L))};
 }
 function wrap(a){return a-2*PI*round(a/(2*PI))}
-function sunset(noon){
+function sunEvent(noon,angle){
  var lw=-35.235*rad,phi=31.778*rad,lon=.0009+lw/(2*PI),dt=round(toDays(noon)-lon)+lon;
  for(var i=0;i<3;i++)dt-=wrap(sidereal(dt,lw)-coords(tt(dt)).ra)/(2*PI);
- var h0=-.833*rad,dec=coords(tt(dt)).dec;
+ var h0=angle*rad,dec=coords(tt(dt)).dec;
  var cosH=(sin(h0)-sin(phi)*sin(dec))/(cos(phi)*cos(dec));
  var d=dt+acos(cosH)/(2*PI);
  for(var j=0;j<2;j++){
@@ -50,17 +50,18 @@ function sunset(noon){
  }
  return (d+2451545+.5-2440588)*day;
 }
+function sunset(noon){return sunEvent(noon,-.833)}
 var fmt=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jerusalem',year:'numeric',month:'2-digit',day:'2-digit'});
 function civilNoon(now){var p={};fmt.formatToParts(new Date(now)).forEach(function(x){p[x.type]=x.value});return Date.UTC(+p.year,+p.month-1,+p.day,12)}
-function interval(friday){return {start:Math.floor((sunset(friday)-42*min)/min)*min,end:Math.ceil((sunset(friday+day)+74*min)/min)*min}}
+function interval(friday){return {start:Math.floor((sunset(friday)-42*min)/min)*min,end:Math.ceil((sunset(friday+day)+74*min)/min)*min,candles:Math.floor((sunset(friday)-40*min)/min)*min,havdalah:Math.ceil(sunEvent(friday+day,-8.5)/min)*min}}
 function state(now){
  now=now===undefined?Date.now():Number(now);
  var noon=civilNoon(now),dow=new Date(noon).getUTCDay();
  var friday=noon+((5-dow+7)%7)*day;
  var prior=interval(friday-7*day),next=interval(friday);
- if(now>=prior.start&&now<prior.end)return {closed:true,start:prior.start,end:prior.end,next:prior.end};
- if(now>=next.start&&now<next.end)return {closed:true,start:next.start,end:next.end,next:next.end};
- return {closed:false,start:next.start,end:next.end,next:next.start};
+ if(now>=prior.start&&now<prior.end)return Object.assign({closed:true,next:prior.end},prior);
+ if(now>=next.start&&now<next.end)return Object.assign({closed:true,next:next.end},next);
+ return Object.assign({closed:false,next:next.start},next);
 }
 root.FlashPlusShabbat={state:state,sunset:sunset,timezone:'Asia/Jerusalem',location:'Jerusalem',closeBeforeSunsetMinutes:42,openAfterSunsetMinutes:74};
 if(typeof module==='object'&&module.exports)module.exports=root.FlashPlusShabbat;
